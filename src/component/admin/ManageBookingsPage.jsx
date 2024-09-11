@@ -27,20 +27,21 @@ const ManageBookingsPage = () => {
     }, []);
 
     useEffect(() => {
+        const filterBookings = (term) => {
+            if (term === '') {
+                setFilteredBookings(bookings);
+            } else {
+                const filtered = bookings.filter((booking) =>
+                    booking.bookingConfirmationCode && booking.bookingConfirmationCode.toLowerCase().includes(term.toLowerCase())
+                );
+                setFilteredBookings(filtered);
+            }
+            setCurrentPage(1);
+        };
+    
         filterBookings(searchTerm);
     }, [searchTerm, bookings]);
-
-    const filterBookings = (term) => {
-        if (term === '') {
-            setFilteredBookings(bookings);
-        } else {
-            const filtered = bookings.filter((booking) =>
-                booking.bookingConfirmationCode && booking.bookingConfirmationCode.toLowerCase().includes(term.toLowerCase())
-            );
-            setFilteredBookings(filtered);
-        }
-        setCurrentPage(1);
-    };
+    
 
     const handleSearchChange = (e) => {
         setSearchTerm(e.target.value);

@@ -2,7 +2,7 @@ import axios from "axios"
 
 export default class ApiService {
 
-    static BASE_URL = "http://localhost:8081"
+    static BASE_URL = "https://springhotel-backend-16f6f63a311d.herokuapp.com"
 
     static getHeader() {
         const token = localStorage.getItem("token");
