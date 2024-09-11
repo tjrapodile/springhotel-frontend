@@ -1,0 +1,178 @@
+/* Responsive and professional styling for the Find Booking page */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* Import Roboto font */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.find-booking-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  text-align: center;
+  width:75%;
+}
+
+h2 {
+  font-size: 32px;
+  color: grey;
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Ensure input and button align properly */
+  margin-bottom: 20px;
+  width: 75%; /* Take up more width */
+}
+
+.search-container input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 70%; /* Adjust width for better spacing */
+}
+
+.search-container button {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width:100%;
+}
+
+.search-container button:hover {
+  background-color: #285ea8;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.booking-details {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Added deeper box-shadow */
+  width: 75%; /* Increased width */
+  text-align: left;
+  margin-top: 30px; /* Added margin to indent from the top */
+  margin-bottom: 30px;
+}
+
+.booking-details h3 {
+  color: blue;
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+
+.booking-details p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-weight: 700;
+  color: blue;
+}
+
+.booking-details p{
+  text-align: center;
+}
+
+.room-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.cancel-button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-button:hover {
+  background-color: #285ea8;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .booking-details {
+    padding: 20px; /* Adjust padding for smaller screens */
+    width: 85%; /* Slightly reduced width */
+  }
+
+  .search-container {
+    flex-direction: column; /* Stack input and button vertically */
+    align-items: center; /* Center items horizontally */
+    width: 100%; /* Ensure it takes full width */
+  }
+
+  .search-container input {
+    width: 80%; /* Adjust width for smaller screens */
+    margin-bottom: 10px; /* Space between input and button */
+  }
+
+  .search-container button {
+    width: 80%; /* Match button width with input width */
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .cancel-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  .search-container input {
+    width: 100%; /* Full width for very small screens */
+    margin-bottom: 10px; /* Space between input and button */
+  }
+
+  .search-container button {
+    width: 100%; /* Full width for button */
+  }
+
+  .search-container {
+    flex-direction: column;
+  }
+
+  .booking-details {
+    width: 90%; /* Ensure the container takes up more width on smaller screens */
+    padding: 15px;
+  }
+
+  .cancel-button {
+    padding: 12px;
+    font-size: 16px;
+  }
+}

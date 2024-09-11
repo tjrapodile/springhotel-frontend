@@ -1,0 +1,66 @@
+/* Dark Theme for HomePage */
+.all-rooms {
+    margin: 50px 0px 90px 0px;
+  }
+  
+  .all-rooms h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: grey; /* Updated to grey */
+    text-decoration: underline; /* Added underline */
+  }
+  
+  .all-room-filter-div {
+    display: flex;
+    flex-direction: column; /* Stack label and select vertically */
+    align-items: center; /* Center align the content */
+    margin: 0 auto; /* Ensure filter stays in the center */
+    width: 100%; /* Take up full width */
+    max-width: 600px; /* Set max width to keep it from getting too large */
+  }
+  
+  .all-room-filter-div label {
+    color: blue;
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 10px; /* Add margin for spacing between label and dropdown */
+  }
+  
+  .all-room-filter-div select {
+    width: 100%; /* Full width for the dropdown */
+    max-width: 400px; /* Max width for the dropdown */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .add-room-button {
+    float: right;
+    margin-right: 70px;
+    font-weight: 600;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .all-room-filter-div {
+      margin-left: 0;
+      width: 100%;
+      padding: 0 15px; /* Add padding to prevent it from touching the screen edges */
+    }
+    
+    .all-room-filter-div select {
+      max-width: 100%; /* Make the select take up the full width on smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .add-room-button {
+      margin-right: 10px; /* Reduce margin for smaller screens */
+    }
+    
+    .all-rooms {
+      margin: 20px 0px 50px 0px;
+    }
+  }
+  

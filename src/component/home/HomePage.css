@@ -1,0 +1,150 @@
+/* Dark Theme for HomePage */
+.home {
+    margin-bottom: 100px;
+  }
+  
+  /* HEADER */
+  /* Header overlay */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* The header banner */
+  .header-banner {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 80vh;
+  }
+  
+  .header-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .header-banner h1 {
+    font-size: 50px;
+    color: #f8f3f3;
+  }
+
+  .spring-color{
+    color: rgb(246, 246, 248);
+    font-weight: 600;
+    font-style:oblique;
+    font-size: 50px;
+
+  }
+  
+  .header-banner h3 {
+    color: blue;
+    text-shadow: white 0.1em 0.1em 0.2em;
+    font-size: 30px;
+  }
+  
+  
+  /*View all rooms home section*/
+  .view-rooms-home {
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: underline;
+    color: grey;
+  }
+  
+ /* SERVICES SECTION */
+.service-section {
+    background-color: #f9f9f9; /* Light grey background for the section */
+    padding: 30px 15px; /* Add padding to the section */
+    margin-left: 50px;
+}
+
+.service-card {
+    background-color: #ffffff; /* White background for each card */
+    border: 1px solid #ddd; /* Light grey border for the cards */
+    border-radius: 5px; /* Rounded corners */
+    padding: 20px; /* Padding inside each card */
+    text-align: center; /* Center-align text and images */
+    margin-bottom: 15px; /* Gap between cards */
+    width: 100%; /* Default width for small screens */
+}
+
+.services-color{
+    color:blue;
+}
+
+.service-title{
+    color:blue;
+}
+
+.home-services{
+    color:black;
+}
+
+
+.service-card img {
+    max-width: 80%; /* Reduce image size for smaller screens */
+    height: auto; /* Maintain aspect ratio of images */
+    margin-bottom: 15px; /* Space between image and text */
+}
+
+/* For larger screens */
+@media (min-width: 768px) {
+    .service-card {
+        width: 48%; /* Two cards per row with some margin */
+    }
+
+}
+
+@media (min-width: 992px) {
+    .service-card {
+        width: 23%; /* Four cards per row */
+    }
+
+    
+}
+
+/* Responsive design for very small screens */
+@media (max-width: 576px) {
+    .service-card img {
+        max-width: 60%; /* Smaller images on very small screens */
+    }
+
+    .service-section {
+      margin-left: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap; /* Wrap cards in multiple rows */
+        gap: 15px; /* Space between cards */
+    }
+    
+    .service-card {
+        width: 100%; /* Full width for each card on small screens */
+    }
+    
+    .service-card img {
+        max-width: 100%; /* Ensure images fit within the card */
+    }
+
+    .service-section {
+      margin-left: 0px;
+  }
+}

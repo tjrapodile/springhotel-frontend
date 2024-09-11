@@ -1,0 +1,139 @@
+.container{
+    margin:0 auto;
+}
+.room-details-booking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:90px;
+    padding: 20px;
+}
+
+h3{
+    text-align: center;
+}
+  
+.room-details-image {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+    margin-left:250px;
+    display: block;
+    margin: 0 auto;
+}
+
+.room-details-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Ensures the container takes full width */
+    margin-bottom: 20px;
+}
+
+.book-now-button, .confirm-booking, .accept-booking {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    min-width: 150px; /* Ensures buttons have enough width */
+    margin: 5px; /* Add space between buttons */
+}
+
+.book-now-button:hover, .confirm-booking:hover, .accept-booking:hover {
+    background-color: blue;
+}
+
+.date-picker-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.detail-search-field {
+    margin-right: 51px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.guest-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 29px;
+}
+
+.guest-div {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.guest-div label {
+    margin-right: 10px;
+}
+
+.guest-div input[type="number"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 50%;
+}
+
+.booking-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.booking-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.booking-number {
+    font-weight: bold;
+    color: #333;
+}
+
+.booking-text {
+    font-style: italic;
+    color: #666;
+}
+
+.booking-success-message {
+    text-align: center;
+    color: #45a049;
+    font-weight: 800;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    text-align: center;
+    color: #b10505;
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .room-details-image {
+        margin-left:0px;
+    }
+}
