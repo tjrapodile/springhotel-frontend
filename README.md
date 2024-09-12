@@ -1,4 +1,46 @@
-# Getting Started with Create React App
+# Spring Hotel Frontend
+SpringHotel Frontend is a React-based web application designed for an intuitive and responsive user experience.
+Built with React and Bootstrap, this project offers a modern interface for the SpringHotel application.
+
+Features
+User-Friendly Interface: A clean and modern design using Bootstrap to enhance user experience.
+Responsive Design: Optimized for various screen sizes and devices.
+Interactive Elements: Utilize React components for a dynamic user experience.
+Easy Navigation: Bootstrap-powered navigation elements for seamless user interaction.
+
+Technologies Used
+Frontend:
+-React
+-Bootstrap (latest version)
+
+Package Management:
+-npm or yarn for managing dependencies
+
+Getting Started
+-Clone the Repository
+git clone https://github.com/tjrapodile/springhotel-frontend.git
+
+-Navigate to the Project Director
+cd springhotel-frontend
+
+-Install Dependencies
+Ensure you have Node.js and npm (or yarn) installed. Then, install the required packages:
+npm install
+or
+yarn install
+
+-Run the Development Server
+Start the development server to preview the application:
+npm run start
+or
+yarn start
+
+-Access the Application
+Open your web browser and go to http://localhost:3000 to view the application.
+
+-Usage
+Explore the UI: Navigate through the user-friendly interface to interact with various components.
+Responsive Design: Test the application on different devices to ensure responsiveness and usability.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
